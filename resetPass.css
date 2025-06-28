@@ -1,0 +1,96 @@
+body {
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.resetBox {
+  width: 350px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(15px);
+  background-color: rgba(123, 147, 15, 0.1);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1.2s ease-out forwards;
+  text-align: center;
+}
+
+.resetBox h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: white;
+}
+
+.resetBox #para {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.resetBox input {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: aqua;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.resetBox button {
+  width: 100%;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #00f0ff, #00ffe0);
+  color: #000;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.resetBox button:hover {
+  background: linear-gradient(to right, #00ffe0, #00f0ff);
+  transform: scale(1.1);
+}
+
+#footer-link {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+#footer-link a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+#footer-link a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

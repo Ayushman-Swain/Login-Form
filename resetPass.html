@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reset Password</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="resetPass.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="resetBox">
+      <h2><i class="fa-solid fa-unlock-keyhole fa-fade" style="color:aqua;"></i><br><br>Reset Password</h2>
+      <p id="para">Enter your Email address to receive a reset link.</p>
+      <form onsubmit="resetPassword(event)">
+        <input type="email" id="email" placeholder="Enter your Email" required />
+        <button type="submit">Send Reset Link</button>
+      </form>
+      <div id="footer-link">
+        Back to <a href="login.html">Login</a>
+      </div>
+    </div>
+  </div>
+  <script src="login.js"></script>
+</body>
+</html>

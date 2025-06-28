@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background-image: url(reg.jpeg);
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+/* Welcome Box */
+#welcome {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 10px;
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  transform: translateY(-50%) translateX(120%);
+  background-color: rgba(123, 147, 15, 0.1);
+  backdrop-filter: blur(12px);
+  color: white;
+  padding: 40px;
+  width: 280px;
+  height: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.1);
+  animation: welcome-box-1 1.2s ease-out forwards;
+  z-index: 1;
+}
+
+@keyframes welcome-box-1 {
+  from {
+    transform: translateY(-50%) translateX(120%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(-50%) translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes welcome-box-2 {
+  from {
+    opacity: 0;
+    transform: translateY(-150%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Sign Up Box */
+#sign-up {
+  position: relative;
+  z-index: 2;
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px 30px;
+  width: 350px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.15);
+  animation: login-box 1s ease-out;
+}
+
+@keyframes login-box {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#sign-up h3 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #0f0e0fdd;
+}
+/* For Mobile */
+#mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+@media (max-width: 1024px) {
+  #mobile {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 40px;
+  }
+
+  #welcome {
+    position: static;
+    width: 90%;
+    animation: welcome-box-2 1s ease-out forwards;
+    margin-bottom: 20px;
+    text-align: center;
+    height: fit-content;
+    padding: 30px 20px;
+  }
+
+  #login {
+    width: 90%;
+    margin-top: 0;
+  }
+}
+/* Form */
+.input {
+  margin-bottom: 20px;
+}
+
+.input input {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 0, 217);
+  font-size: 20px;
+  outline: none;
+}
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(to right, #bc05d0e6, #85099363);
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #bc05d0e6, #85099363);
+  transform: scale(1.1);
+}
+/* Footer */
+#footer {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 18px;
+  color: #ccc;
+}
+
+#footer a {
+  color: rgb(255, 0, 217);
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
